@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/coc0.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navi{
+    padding: 0;
+    margin-right: 0px;
+    list-style-type: none;
+}
+.navi>li{
+    display: block;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 1px;
+    width: 150px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-family: Impact;
+    font-size: 20px;
+    line-height: 40px;
+    float: right;
+}
+.navi>li>a{
+    display: block;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 1px;
+    width: 150px;
+    height: 50px;
+    color:rgb(255, 255, 255);
+    font-family: Impact;
+    font-size: 20px;
+    line-height: 40px;
+    float: right;
+    text-decoration: none;
+}
+.navi>li>a:hover{
+    background-color: rgb(247, 131, 131);
+    font-size: 25px;
+}
+.navi>li>.navi>li{
+    display: none;
+}
+.navi>li:hover .navi>li{
+    display: block;
+}
+.active>a{
+    background-color:  rgb(134, 48, 48);
+    color: white !important;
+}
+#right{
+    float: right;
+}
+.row{   
+    width: 100%;
+    height: 100px;
+    margin:5px;
+    margin-top: 2%;
+}
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.33%;
+    float: left;
+}
+.col-5{
+    width:41.66%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.66%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.33%;
+}
+.col-11{
+    width: 91.66%;
+    align-items: center;
+}
+.col-12{
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: monospace;
+    transform: matrix(180deg)
+}
+[class*=col-]{
+    float: left;
+}
+.image{
+    float: left;
+    border: 4px solid rgb(58, 0, 0);
+    margin: 4px;
+}
+h2{
+    margin-top: 20%;
+    margin-left: 40px;
+    color: white;
+    font-family: cursive;
+    font-size: 80px;
+}
+p{
+    color: white;
+    margin-left: 40px;
+    font-family: cursive;
+    font-size: 40px;
+}
+@media screen and (max-width:600px)
+{.main {
+    width: 100%;
+}
+}
