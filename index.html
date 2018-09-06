@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+</head>
+<body>
+<div class="row">
+    <div class="col-12"><h1> Welcome to Maha's first Webpage</h1></div>
+</div>
+<div class="col-11">
+    <ul class="navi">
+        <li class="coll-1" id="right"><a href="#">DE</a></li>
+         <li><a href="file:///C:/Users/mimo9/Desktop/Mywebsite/GitHub/Profile/project/contactMe.html" >CONTACT</a></li>                
+        <li ><a href="file:///C:/Users/mimo9/Desktop/Mywebsite/GitHub/Profile/project/Aboutme.html" >ABOUT</a> </li>  
+        <li class="active"><a href="file:///C:/Users/mimo9/Desktop/Mywebsite/GitHub/Profile/project/index.html#">HOME</a></li>          
+    </ul></div>
+</div>
+<div class="row">
+    <div class="col-4">
+    <div class="image">
+     <img id="firstImg"  src="image/me2.JPG" url="me2.JPG" style="width:200px; height:300px;">
+    </div>
+    <div class="image">
+        <img id="secondImg" src="image/Snapseed.jpg" url="Snapseed.jpg" style="width:200px; height:300px;">
+    </div>
+    <div class="image">
+        <img id="thirdImg" src="image/mimi.JPG" url="mimi.jpg" style="width:200px; height:300px;">
+    </div>
+    <div class="image">
+        <img id="fourthImg" src="image/momo.jpg" url="momo.jpg" style="width:200px; height:300px;">
+    </div>
+    </div>
+
+<div class="col-8">
+ <h2><marquee behavior="slide" direction="left" scrollamount="50"> MAHA KAHLEH</h2></marquee>
+   <p class="article"> <marquee behavior="slide" direction="left" scrollamount="50"> I'm a Student in DCI in Hamburg <br> and that's my first project.</p> </marquee>
+   <button id="changeButton" onclick="turn()"><marquee behavior="slide" direction="up" scrollamount="1"> Change</marquee></button>
+</div>
+</div>
+<div class="col-12" class="footer">
+        <pre style=" margin-top:10%;">  &#169;   Copyright .   Maha Kahleh   .  2018</pre>
+      </div>
+<script>
+    function turn(){
+        var imgsrc1=document.getElementById("firstImg").getAttribute("src");
+        var imgsrc2=document.getElementById("secondImg").getAttribute("src");
+        var imgsrc3=document.getElementById("thirdImg").getAttribute("src");
+        var imgsrc4=document.getElementById("fourthImg").getAttribute("src");
+
+        if(imgsrc1=="image/me2.JPG" && imgsrc2=="image/Snapseed.jpg" && imgsrc3=="image/mimi.JPG" && imgsrc4=="image/momo.jpg" ){
+              document.getElementById("firstImg").setAttribute("src" , "image/hmm.JPG");
+              document.getElementById("changeButton").innerHTML="Change";
+
+              document.getElementById("secondImg").setAttribute("src" , "image/hmhm.JPG");
+              document.getElementById("changeButton").innerHTML="Change";
+
+              document.getElementById("thirdImg").setAttribute("src" , "image/red.JPG");
+              document.getElementById("changeButton").innerHTML="Change";
+
+               document.getElementById("fourthImg").setAttribute("src" , "image/lala.jpg");
+              document.getElementById("changeButton").innerHTML="Change";
+        }
+        else{
+            document.getElementById("firstImg").setAttribute("src" , "image/me2.JPG");
+              document.getElementById("changeButton").innerHTML="Change";
+
+              document.getElementById("secondImg").setAttribute("src" , "image/Snapseed.jpg");
+              document.getElementById("changeButton").innerHTML="Change";
+
+              document.getElementById("thirdImg").setAttribute("src" , "image/mimi.JPG");
+              document.getElementById("changeButton").innerHTML="Change";
+
+               document.getElementById("fourthImg").setAttribute("src" , "image/momo.jpg");
+              document.getElementById("changeButton").innerHTML="Change";
+        }
+        
+        
+        }
+</script>
+</body>
+</html>
